@@ -14,7 +14,7 @@ MainWindow::~MainWindow() {
 }
 
 MainWindow::MainWindow() {
-  setWindowTitle("ShaderCap 1.1 by dila");
+  setWindowTitle("ShaderCap 1.2 by dila");
   resize(576, 360);
   layoutInitialView();
   centerWindow(false);

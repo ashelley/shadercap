@@ -28,7 +28,7 @@ VideoOptions::VideoOptions(QWidget* parent) : QWidget(parent) {
   widthLayout->addStretch();
   widthLayout->addWidget(new QLabel("Width:", this));
   width = new QSpinBox(this);
-  width->setMaximum(65536);
+  width->setMaximum(1000000);
   width->setValue(1280);
   widthLayout->addWidget(width);
   widthLayout->addWidget(new QLabel("pixels"));
@@ -40,7 +40,7 @@ VideoOptions::VideoOptions(QWidget* parent) : QWidget(parent) {
   QLabel* heightLabel = new QLabel("Height:", this);
   heightLayout->addWidget(heightLabel);
   height = new QSpinBox(this);
-  height->setMaximum(65536);
+  height->setMaximum(1000000);
   height->setValue(720);
   heightLayout->addWidget(height);
   heightLayout->addWidget(new QLabel("pixels"));
@@ -52,7 +52,7 @@ VideoOptions::VideoOptions(QWidget* parent) : QWidget(parent) {
   QLabel* fpsLabel = new QLabel("Framerate:", this);
   fpsLayout->addWidget(fpsLabel);
   fps = new QSpinBox(this);
-  fps->setMaximum(500);
+  fps->setMaximum(1000000);
   fps->setValue(60);
   fpsLayout->addWidget(fps);
   fpsLayout->addWidget(new QLabel("fps"));
@@ -64,7 +64,7 @@ VideoOptions::VideoOptions(QWidget* parent) : QWidget(parent) {
   QLabel* brLabel = new QLabel("Bitrate:", this);
   brLayout->addWidget(brLabel);
   bitrate = new QSpinBox(this);
-  bitrate->setMaximum(100 * 1024);
+  bitrate->setMaximum(1000000);
   bitrate->setValue(5000);
   brLayout->addWidget(bitrate);
   brLayout->addWidget(new QLabel("kbps"));
@@ -76,8 +76,8 @@ VideoOptions::VideoOptions(QWidget* parent) : QWidget(parent) {
   QLabel* durLabel = new QLabel("Duration:", this);
   durLayout->addWidget(durLabel);
   duration = new QSpinBox(this);
-  fps->setMaximum(10 * 60 * 60);
-  duration->setValue(30);
+  duration->setMaximum(1000000);
+  duration->setValue(60);
   durLayout->addWidget(duration);
   durLayout->addWidget(new QLabel("seconds"));
   durLayout->addStretch();

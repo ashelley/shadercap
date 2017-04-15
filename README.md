@@ -6,6 +6,6 @@ To build it you will require two libaries:
 * libvpx - http://www.webmproject.org/code/
 * glslang - https://www.khronos.org/opengles/sdk/tools/Reference-Compiler/
 
-You can download a pre-built Windows binary from: http://www.movss.com/~rich/shadercap/
+You can download a pre-built Windows binary from: http://sigint9.github.io/shadercap/
 
-![ShaderCap Screenshot](http://i.imgur.com/T4h16u1.png)
+![ShaderCap Screenshot](http://sigint9.github.io/shadercap/img/d.png)
